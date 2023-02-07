@@ -221,8 +221,8 @@ def Random():
     geom1_params.rotationx = random.randint(-360,360)
     geom1_params.rotationy = random.randint(-360,360)
     geom1_params.rotationz = random.randint(-360,360)
-    geom1_params.Shear = random.random(0,2,0.01)
-    geom1_params.Swell =random.random(0,50, 0.1)
+    geom1_params.Shear = random.uniform(0,2,0.01)
+    geom1_params.Swell =random.uniform(0,50, 0.1)
 
     
     for cube in cubes: scene.remove(cube)
